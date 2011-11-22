@@ -11,6 +11,7 @@ gem 'rack', '1.3.3'
 
 group :development do
   gem 'rspec-rails'
+  gem 'annotate', :git => 'http://github.com/ctran/annotate_models.git'
 end
 
 group :test do
