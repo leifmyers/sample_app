@@ -1,7 +1,7 @@
 FactoryGirl.define do
   factory :user do
-    name                  "Example User"
-    email                 "user@example.com"
+    name                  "Leif Myers"
+    email                 "leif@example.com"
     password              "foobar"
     password_confirmation "foobar"
   end

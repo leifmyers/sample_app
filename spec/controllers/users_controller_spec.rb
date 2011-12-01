@@ -92,7 +92,7 @@ describe UsersController do
 
     describe "success" do
       before(:each) do
-        @attr = {:name => "New User",    :email => "user11@example.com",
+        @attr = {:name => "New User",    :email => "user@example.com",
                  :password => "foobar",  :password_confirmation => "foobar"}
       end
 
@@ -107,10 +107,6 @@ describe UsersController do
         response.should redirect_to(user_path(assigns(:user)))
       end
 
-      it "should have a welcome message" do
-        post :create, :user => @attr
-        flash[:success].should =~ /welcome to the sample app/i
-      end
     end
-  end
+   end
 end
