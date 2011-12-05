@@ -5,6 +5,10 @@ describe PagesController do
 
   before(:each) do
         @title_prefix = "Ruby on Rails Tutorial Sample App | "
+        #todo figure out how to test this
+        #@request.env['HTTPS'] = nil
+
+        #assert_redirected_to "https://" + @request.host + @request.url
   end
 
   describe "GET 'home'" do
